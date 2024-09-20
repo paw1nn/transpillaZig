@@ -8,5 +8,5 @@ pub fn build(b:*std.build.Builder()) void{
     exe.install();   
     const run_cmd =exe.run();
     run_cmd.step.dependOn(b.getInstallStep());
-b.default_step.dependOn(&run_cmd.step);
+b.default_step.dependOn
 } 
