@@ -64,16 +64,10 @@ extern "c" {
     fn printf(fmt:*const u8,...) c_int
 }
 pub fn main() void{
-    printf("Hello from c!\n")
+    printf("Hello from c!\n")}
+}
 }
 
-const std = @import("std")
-pub fn build(b:*std.build.Builder) void{
+};
 
-const mode = b.standardReleaseOptions();
-const exe = b.addExecutable("myapp","src/main.zig")
-
-exe.setBuildMode(mode)
-
-db.default_step.dependOn(&exe.run);
 }

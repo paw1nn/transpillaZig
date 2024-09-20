@@ -68,12 +68,6 @@ pub fn main() void{
 }
 
 const std = @import("std")
-pub fn build(b:*std.build.Builder) void{
-
-const mode = b.standardReleaseOptions();
-const exe = b.addExecutable("myapp","src/main.zig")
-
-exe.setBuildMode(mode)
-
-db.default_step.dependOn(&exe.run);
+pub fn main() void{
+    
 }
