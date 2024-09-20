@@ -60,9 +60,4 @@ async fn doWork() void{
 // async code 
 }
 
-extern "c" {
-    fn printf(fmt:*const u8,...) c_int
-}
-pub fn main() void{
-    printf("Hello from c!\n")
-}
+extern "c" {}
