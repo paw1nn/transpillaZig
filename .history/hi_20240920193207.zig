@@ -47,8 +47,4 @@ const result = @compileTime(factorial(5));
 std.debug.print("Factorail of 5 is {}\n" ,.{result})
 
 }
-fn swap(compTime T :type ,a:T,b:T) void{
-    const temp =a;
-    a=b;
-    b=temp;
-}
+fn swap(compTime T)
