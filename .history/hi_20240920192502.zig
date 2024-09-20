@@ -37,13 +37,3 @@ x:f64,y:f64
 }
 const p =Point {.x =1.0 ,.y=2.0}
 const std = @import("std");
-pub fn main () !void {
-    return error.SomeError;
-}
-
-pub fn main() void {
-
-const result = @compileTime(factorial(5));
-std.debug.print("Factorail of 5 is {}\n" ,.{result})
-
-}

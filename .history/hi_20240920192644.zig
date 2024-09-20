@@ -43,7 +43,5 @@ pub fn main () !void {
 
 pub fn main() void {
 
-const result = @compileTime(factorial(5));
-std.debug.print("Factorail of 5 is {}\n" ,.{result})
 
 }
