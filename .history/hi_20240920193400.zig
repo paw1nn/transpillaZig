@@ -52,6 +52,4 @@ fn swap(compTime T :type ,a:T,b:T) void{
     a=b;
     b=temp;
 }
-const customAllocators =struct {
-    //custom allocators
-}
+const customAllocators -
