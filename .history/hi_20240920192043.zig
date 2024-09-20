@@ -9,6 +9,8 @@ var y:f64 =3.14;
 const isActive :bool =true;
 
 
+
+
 if(x>5){
     std.debug.print("x is greater than 5\n",.{})
 }
@@ -31,8 +33,3 @@ const numbers :[5] i32 =[1,2,3,4,5];
 const slice :[] const i32 =numbers[0..3]
 ; 
 
-
-const Point =struct {
-x:f64,y:f64
-}
-const p =Point {.x =1.0 ,.y=2.0}

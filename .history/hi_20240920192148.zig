@@ -32,7 +32,6 @@ const slice :[] const i32 =numbers[0..3]
 ; 
 
 
-const Point =struct {
-x:f64,y:f64
+const point =struct {
+    
 }
-const p =Point {.x =1.0 ,.y=2.0}

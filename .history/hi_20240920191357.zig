@@ -9,6 +9,8 @@ var y:f64 =3.14;
 const isActive :bool =true;
 
 
+
+
 if(x>5){
     std.debug.print("x is greater than 5\n",.{})
 }
@@ -22,17 +24,3 @@ for (i..=5) [i]{
         return a+b;
     }
 
-fn divide(a:i32,b:i32) !i32{
-    if(b==0) return error.DivideByZero;
-return a/b;
-}
-
-const numbers :[5] i32 =[1,2,3,4,5];
-const slice :[] const i32 =numbers[0..3]
-; 
-
-
-const Point =struct {
-x:f64,y:f64
-}
-const p =Point {.x =1.0 ,.y=2.0}
