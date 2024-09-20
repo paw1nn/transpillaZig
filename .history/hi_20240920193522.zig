@@ -56,6 +56,4 @@ const customAllocators =struct {
     //custom allocators
 }
 
-async fn doWork() void{
-// async code 
-}
+async fn doWo
