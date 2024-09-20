@@ -1,6 +1,6 @@
 
 const std = @import("std");
-const transpiler  =@import("modules/transpiler");
+const transpiler  =@import("transpiler");
 
 
 pub fn main() !void{
@@ -10,11 +10,11 @@ pub fn main() !void{
 const out_path= "out/sample.js";
 
 const ts_content =try
-std.fs.cwd().readFileAlloc(allocator,is_path,std.math.maxInt(usize));
+std.fs.cwd().readFileAlloc(allocator,in_path,std.math.maxInt(usize));
 defer allocator.free(ts_content);
 
 const transpiled_content =transpiler.transpile(ts_content);
-try std.fs.cwd().writeFile(out_path,transpiled_content);
+try std.fs.cwd().writeFile(out_path,transpile_content);
 
 try stdout.print("Transformation complete ! Output written to :;{s}\n" ,.{out_path});
 }
