@@ -3,7 +3,4 @@ build:
 
 run:
   zig build run 
-
-
-clean:
-	rm -rf zig-cache zig-out
+  
